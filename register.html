@@ -132,6 +132,7 @@
         // Firebase App (the core Firebase SDK) is always required and must be listed first
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js";
 
         // Your web app's Firebase configuration
         const firebaseConfig = {
@@ -147,11 +148,12 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
+        const db = getFirestore(app);
 
         // Register Form
         const registerForm = document.getElementById('registerForm');
         if (registerForm) {
-            registerForm.addEventListener('submit', (e) => {
+            registerForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const name = registerForm['name'].value;
                 const email = registerForm['email'].value;
@@ -164,19 +166,27 @@
                     return;
                 }
 
-                createUserWithEmailAndPassword(auth, email, password)
-                    .then((userCredential) => {
-                        console.log('User registered:', userCredential.user);
-                        // Redirect or show success message
-                    })
-                    .catch((error) => {
-                        console.error('Error registering:', error);
-                        // Show error message
+                try {
+                    // Create user with Firebase Auth
+                    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                    const user = userCredential.user;
+
+                    // Add user to Firestore
+                    await setDoc(doc(db, "users", user.uid), {
+                        name: name,
+                        email: email,
+                        role: "user",  // Lahko nastavite na "admin" za admin uporabnike
+                        createdAt: new Date()
                     });
+
+                    console.log('User registered and added to Firestore:', user);
+                    // Redirect or show success message
+                } catch (error) {
+                    console.error('Error registering:', error);
+                    // Show error message
+                }
             });
         }
     </script>
-<script src="app.js" type="module"></script>
-
 </body>
 </html>
