@@ -3,19 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zmenkarija</title>
+    <title>Zmenkarija - Spoznajte nove ljudi</title>
+    <style>
+        /* Osnovne nastavitve */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding-top: 60px; /* Razmak za fiksni header */
+        }
+
+        .hero {
+            background: #e9ecef;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dobrodošli na Zmenkariji!</h1>
-    <p>To je začetna stran vaše spletne strani.</p>
+    <header>
+        <div class="container">
+            <h1>Zmenkarija</h1>
+            <nav>
+                <a href="#home">Domov</a>
+                <a href="#search">Iskanje</a>
+                <a href="#profile">Profil</a>
+                <a href="#register">Registracija</a>
+                <a href="#login">Prijava</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container">
+                <h2>Najdite svojega popolnega partnerja</h2>
+                <p>Registrirajte se zdaj in začnite raziskovati.</p>
+                <a href="#register" class="btn">Pridružite se zdaj</a>
+            </div>
+        </section>
+
+        <section id="search">
+            <div class="container">
+                <h2>Iskanje</h2>
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Išči profile...">
+                    <button type="submit">Išči</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="profile">
+            <div class="container">
+                <h2>Vaš Profil</h2>
+                <p>Osebne nastavitve in informacije.</p>
+                <!-- Tukaj lahko dodate še več vsebine ali obrazcev za profil -->
+            </div>
+        </section>
+
+        <section id="register">
+            <div class="container">
+                <h2>Registracija</h2>
+                <form id="registerForm">
+                    <label for="name">Ime:</label>
+                    <input type="text" id="name" name="name" placeholder="Vnesite vaše ime" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Vnesite vaš email" required>
+
+                    <label for="password">Geslo:</label>
+                    <input type="password" id="password" name="password" placeholder="Vnesite vaše geslo" required>
+
+                    <label for="confirmPassword">Potrdite geslo:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Potrdite vaše geslo" required>
+
+                    <button type="submit">Registracija</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="login">
+            <div class="container">
+                <h2>Prijava</h2>
+                <form id="loginForm">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="Vnesite vaš email" required>
+
+                    <label for="loginPassword">Geslo:</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Vnesite vaše geslo" required>
+
+                    <button type="submit">Prijava</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zmenkarija. Vse pravice pridržane.</p>
+        </div>
+    </footer>
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-analytics.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js"></script>
     <script>
-        // Your web app's Firebase configuration
+        // Vaša Firebase konfiguracija
         const firebaseConfig = {
             apiKey: "AIzaSyCeQk4S8MTyaVw1e8A1Eov6b_oLEIwBLjc",
             authDomain: "zmenkarija.firebaseapp.com",
@@ -26,9 +226,64 @@
             measurementId: "G-ERBR97WQGE"
         };
 
-        // Initialize Firebase
+        // Inicializacija Firebase
         const app = firebase.initializeApp(firebaseConfig);
-        const analytics = firebase.analytics();
+        const auth = firebase.getAuth(app);
+        const db = firebase.getFirestore(app);
+
+        // Funkcija za registracijo
+        const registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const name = registerForm['name'].value;
+                const email = registerForm['email'].value;
+                const password = registerForm['password'].value;
+                const confirmPassword = registerForm['confirmPassword'].value;
+
+                if (password !== confirmPassword) {
+                    alert('Gesli se ne ujemata.');
+                    return;
+                }
+
+                try {
+                    const userCredential = await firebase.createUserWithEmailAndPassword(auth, email, password);
+                    const user = userCredential.user;
+
+                    await firebase.setDoc(firebase.doc(db, "users", user.uid), {
+                        name: name,
+                        email: email,
+                        role: "user",
+                        createdAt: new Date()
+                    });
+
+                    alert('Registracija uspešna!');
+                    // Preusmeri ali osveži stran
+                } catch (error) {
+                    console.error('Napaka pri registraciji:', error);
+                    alert('Prišlo je do napake pri registraciji.');
+                }
+            });
+        }
+
+        // Funkcija za prijavo
+        const loginForm = document.getElementById('loginForm');
+        if (loginForm) {
+            loginForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const email = loginForm['email'].value;
+                const password = loginForm['password'].value;
+
+                try {
+                    const userCredential = await firebase.signInWithEmailAndPassword(auth, email, password);
+                    console.log('Uporabnik prijavljen:', userCredential.user);
+                    // Preusmeri ali osveži stran
+                } catch (error) {
+                    console.error('Napaka pri prijavi:', error);
+                    alert('Prišlo je do napake pri prijavi.');
+                }
+            });
+        }
     </script>
 </body>
 </html>
