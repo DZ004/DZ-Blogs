@@ -7,22 +7,24 @@
     <style>
         /* Osnovne nastavitve */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f4f7f9;
         }
 
         header {
-            background: #007bff;
+            background: #ff5f6d;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header .container {
@@ -38,43 +40,52 @@
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
         header nav a:hover {
-            text-decoration: underline;
+            color: #ffd700;
         }
 
         main {
-            padding-top: 60px; /* Razmak za fiksni header */
+            padding-top: 80px; /* Razmak za fiksni header */
         }
 
         .hero {
-            background: #e9ecef;
-            padding: 60px 20px;
+            background: url('https://www.example.com/hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
             text-align: center;
+            border-bottom: 5px solid #ff5f6d;
         }
 
         .hero h2 {
             margin: 0;
-            font-size: 2em;
+            font-size: 3em;
+            font-weight: bold;
         }
 
         .hero p {
             margin: 20px 0;
-            font-size: 1.2em;
+            font-size: 1.5em;
+            line-height: 1.6;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            background: #007bff;
+            padding: 15px 30px;
+            background: #ff5f6d;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background 0.3s, transform 0.3s;
         }
 
         .btn:hover {
-            background: #0056b3;
+            background: #ff2a68;
+            transform: scale(1.05);
         }
 
         section {
@@ -89,40 +100,55 @@
         form {
             max-width: 600px;
             margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             font-weight: bold;
         }
 
         input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
         }
 
         button {
             width: 100%;
-            padding: 10px;
-            background: #007bff;
+            padding: 12px;
+            background: #ff5f6d;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1.1em;
+            transition: background 0.3s;
         }
 
         button:hover {
-            background: #0056b3;
+            background: #ff2a68;
         }
 
         footer {
-            background: #f8f9fa;
+            background: #333;
+            color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -143,8 +169,8 @@
     <main id="home">
         <section class="hero">
             <div class="container">
-                <h2>Najdite svojega popolnega partnerja</h2>
-                <p>Registrirajte se zdaj in začnite raziskovati.</p>
+                <h2>Najdite svojo sorodno dušo</h2>
+                <p>Pridružite se naši skupnosti in začnite svojo zgodbo ljubezni še danes.</p>
                 <a href="#register" class="btn">Pridružite se zdaj</a>
             </div>
         </section>
@@ -162,7 +188,7 @@
         <section id="profile">
             <div class="container">
                 <h2>Vaš Profil</h2>
-                <p>Osebne nastavitve in informacije.</p>
+                <p>Uredite svoje osebne nastavitve in preglejte svoj profil.</p>
                 <!-- Tukaj lahko dodate še več vsebine ali obrazcev za profil -->
             </div>
         </section>
@@ -242,23 +268,14 @@
                 const confirmPassword = registerForm['confirmPassword'].value;
 
                 if (password !== confirmPassword) {
-                    alert('Gesli se ne ujemata.');
+                    alert('Gesli se ne ujemata. Poskusite znova.');
                     return;
                 }
 
                 try {
                     const userCredential = await firebase.createUserWithEmailAndPassword(auth, email, password);
-                    const user = userCredential.user;
-
-                    await firebase.setDoc(firebase.doc(db, "users", user.uid), {
-                        name: name,
-                        email: email,
-                        role: "user",
-                        createdAt: new Date()
-                    });
-
-                    alert('Registracija uspešna!');
-                    // Preusmeri ali osveži stran
+                    console.log('Uporabnik registriran:', userCredential.user);
+                    await addUserToFirestore(userCredential.user.uid, name, email);
                 } catch (error) {
                     console.error('Napaka pri registraciji:', error);
                     alert('Prišlo je do napake pri registraciji.');
@@ -277,12 +294,27 @@
                 try {
                     const userCredential = await firebase.signInWithEmailAndPassword(auth, email, password);
                     console.log('Uporabnik prijavljen:', userCredential.user);
-                    // Preusmeri ali osveži stran
+                    // Preusmerite uporabnika na dashboard ali glavno stran
                 } catch (error) {
                     console.error('Napaka pri prijavi:', error);
                     alert('Prišlo je do napake pri prijavi.');
                 }
             });
+        }
+
+        // Funkcija za dodajanje uporabnika v Firestore
+        async function addUserToFirestore(uid, name, email) {
+            try {
+                await firebase.setDoc(firebase.doc(db, "users", uid), {
+                    name: name,
+                    email: email,
+                    role: "user",
+                    createdAt: new Date()
+                });
+                console.log('Uporabnik dodan v Firestore');
+            } catch (error) {
+                console.error('Napaka pri dodajanju uporabnika:', error);
+            }
         }
     </script>
 </body>
