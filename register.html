@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmenkarija - Registracija</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registracija</h1>
+        <nav>
+            <a href="index.html">Domov</a>
+            <a href="login.html">Prijava</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="registerForm">
+                <h2>Ustvarite svoj profil</h2>
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" placeholder="Vnesite vaše ime" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Vnesite vaš email" required>
+                
+                <label for="password">Geslo:</label>
+                <input type="password" id="password" name="password" placeholder="Vnesite vaše geslo" required>
+                
+                <label for="confirmPassword">Potrdite geslo:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Potrdite vaše geslo" required>
+                
+                <button type="submit">Registracija</button>
+                <p>Že imate račun? <a href="login.html">Prijavite se tukaj</a></p>
+            </form>
+        </div>
+    </main>
+    <script type="module">
+        // Firebase App (the core Firebase SDK) is always required and must be listed first
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCeQk4S8MTyaVw1e8A1Eov6b_oLEIwBLjc",
+            authDomain: "zmenkarija.firebaseapp.com",
+            projectId: "zmenkarija",
+            storageBucket: "zmenkarija.appspot.com",
+            messagingSenderId: "479153250245",
+            appId: "1:479153250245:web:0d36661599efa32ce8f5ac",
+            measurementId: "G-ERBR97WQGE"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Register Form
+        const registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = registerForm['name'].value;
+                const email = registerForm['email'].value;
+                const password = registerForm['password'].value;
+                const confirmPassword = registerForm['confirmPassword'].value;
+
+                // Check if passwords match
+                if (password !== confirmPassword) {
+                    alert('Gesli se ne ujemata. Poskusite znova.');
+                    return;
+                }
+
+                createUserWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                        console.log('User registered:', userCredential.user);
+                        // Redirect or show success message
+                    })
+                    .catch((error) => {
+                        console.error('Error registering:', error);
+                        // Show error message
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
