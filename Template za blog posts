@@ -135,3 +135,161 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odkrijte Prekmurje: Srce Slovenije, Polno Tradicije in Naravnih Lepot - DZ Blogs</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <meta name="description" content="Raziskujemo Prekmurje, regijo polno kulturne dediščine, naravnih lepot in pristnih dogodkov.">
+    <style>
+        /* Add any additional styles here if needed */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background: #0056b3;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #003d7a;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #0056b3;
+        }
+        .author {
+            font-size: 0.9em;
+            color: #666;
+            margin: 10px 0;
+        }
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .related-posts {
+            margin-top: 30px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">DZ Blogs</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="novice.html">Novice</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="izdelki.html">Izdelki</a></li>
+                <li><a href="ustvari_profil.html">Ustvari Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-post">
+        <article>
+            <h2>Odkrijte Prekmurje: Srce Slovenije, Polno Tradicije in Naravnih Lepot</h2> 
+            <p class="author">Avtor: Tibi Topolinjak Munda | Datum: 3. november 2024</p>
+            <img src="pot_do_slike.jpg" alt="Naravne lepote Prekmurja" class="featured-image"> <!-- Replace with the path to your featured image and alt text -->
+            <p>Prekmurje, regija na severovzhodu Slovenije, je pravi dragulj, ki ponuja bogato kulturno dediščino, čudovito naravo in prijazne domačine. Čeprav pogosto ostaja v senci bolj znanih slovenskih destinacij, je Prekmurje polno skritih biserov, ki čakajo, da jih odkrijemo. V tem blogu bomo raziskali nekaj pristnih novic in zanimivosti iz Prekmurja, ki vas bodo navdušile in spodbudile, da to čarobno regijo obiščete.</p>
+
+            <h3>Nova turistična kolesarska pot "Prekmurska krožna pot"</h3>
+            <p>Prekmurje je znano po svojih slikovitih pokrajinah, ki jih je mogoče raziskovati s kolesom. Nova "Prekmurska krožna pot" obsega več kot 100 kilometrov in povezuje številne naravne in kulturne znamenitosti. Pot vodi skozi idilična polja, vinograde in ob reki Muri, ter obiskovalcem omogoča, da doživijo edinstveno lokalno kulturo. Na poti se nahajajo tudi postojanke, kjer lahko degustirate domače prekmurske jedi in vina.</p>
+
+            <h3>Ohranjanje prekmurske dediščine: Festival "Prekmurska jesen"</h3>
+            <p>Vsako leto v septembru poteka festival "Prekmurska jesen", ki slavi bogato kulturno dediščino regije. Festival ponuja raznolike delavnice, kjer lahko obiskovalci spoznajo tradicionalne obrti, kot so tkanje, lončarstvo in prepletanje košar. Kulinarika igra ključno vlogo na festivalu, saj lokalni ponudniki predstavljajo tipične prekmurske jedi, kot so bograč, prekmurska gibanica in domača vina. Festival je odlična priložnost, da se povežete z domačini in spoznate njihovo kulturo.</p>
+
+            <h3>Ekoturizem in trajnostni razvoj v Prekmurju</h3>
+            <p>V Prekmurju se povečuje zavedanje o pomenu ekoturizma in trajnostnega razvoja. Številni lokalni ponudniki se osredotočajo na trajnostne prakse, ki vključujejo ekološko pridelavo hrane, zaščito naravnih virov in ohranjanje kulturne dediščine. To je vidno v številnih kmetijah, ki ponujajo obiskovalcem možnost, da sodelujejo pri kmetijskih delih, uživajo v lokalno pridelanih jedeh ter se naučijo o trajnostnem kmetijstvu.</p>
+
+            <h3>Naravni parki in zaščitena območja</h3>
+            <p>Prekmurje se ponaša z bogato naravno dediščino, ki vključuje zaščitena območja, kot so Krajinski park Goričko in Naravni park Šobec. Ti parki ponujajo številne možnosti za pohodništvo, opazovanje ptic in raziskovanje edinstvenih ekosistemov. V parku Goričko se nahajajo tudi številne kulturne znamenitosti, vključno z gradovi in cerkvami, ki pričajo o bogati zgodovini tega območja.</p>
+
+            <h3>Skrb za zdravje: Prekmurski wellness centri</h3>
+            <p>Zdravje in dobro počutje sta v Prekmurju na prvem mestu. Številni wellness centri ponujajo sprostitvene tretmaje, ki temeljijo na naravnih virih regije. Terme Lendava, znane po svojih termalnih vodah, nudijo različne wellness programe, ki vključujejo masaže, savne in druge sprostitvene tretmaje. Obisk teh centrov je odlična priložnost za obnovitev telesne in duševne energije.</p>
+
+            <h3>Zaključek</h3>
+            <p>Prekmurje je regija, ki ponuja obilo priložnosti za raziskovanje in odkrivanje. Z bogato kulturo, naravnimi lepotami in prijaznimi domačini je to pravo mesto za pobeg od vsakdanjega življenja. Ne glede na to, ali se odločite raziskovati kolesarske poti, obiskati kulturne festivale ali uživati v wellnessu, Prekmurje vas bo zagotovo očaralo. Zato ne odlašajte – obiščite Prekmurje in odkrijte vse njegove čare!</p>
+        </article>
+
+        <aside class="related-posts">
+            <h3>Povezani Blogi</h3> 
+            <ul>
+                <li><a href="novice-o-turizmu.html">Novosti v turizmu v Sloveniji</a></li>
+                <li><a href="trajnostni-projekti.html">Trajnostni projekti po Sloveniji</a></li>
+                <li><a href="lokalne-skupnosti.html">Kako podpirati lokalne skupnosti</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
+        <p>Ostanite povezani: Sledite nam na <a href="https://github.com/DZ004/FlashSale">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
