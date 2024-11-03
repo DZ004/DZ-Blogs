@@ -5,101 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DZ Blogs - Najnovejše Novice in Blogi</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #0056b3;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        nav {
-            background: #004494;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-        .main-banner {
-            background: url('banner.jpg') no-repeat center center;
-            background-size: cover;
-            height: 300px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2em;
-            font-weight: bold;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .latest-news, .popular-topics, .categories {
-            margin-bottom: 20px;
-        }
-        .latest-news h2, .popular-topics h2, .categories h2 {
-            color: #0056b3;
-        }
-        .news-item, .topic-item, .category-item {
-            background: white;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-        }
-        .news-item img, .topic-item img, .category-item img {
-            width: 100px;
-            height: 80px;
-            margin-right: 15px;
-            border-radius: 5px;
-        }
-        .footer {
-            background: #0056b3;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>DZ Blogs</h1>
-        <p>Vaš vir za najnovejše novice in bloge o različnih temah</p>
+        <div class="container">
+            <h1><a href="index.html">DZ Blogs</a></h1>
+            <p>Vaš vir za najnovejše novice in bloge o različnih temah</p>
+        </div>
     </header>
+    
     <nav>
         <ul>
-            <li><a href="#">Domov</a></li>
-            <li><a href="#">Novice</a></li>
-            <li><a href="#">Blogi</a></li>
-            <li><a href="#">O Nas</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="index.html" class="active">Domov</a></li>
+            <li><a href="novice.html">Novice</a></li>
+            <li><a href="blogi.html">Blogi</a></li>
+            <li><a href="o_nas.html">O Nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="izdelki.html">Izdelki</a></li>
+            <li><a href="ustvari_profil.html">Ustvari Profil</a></li>
+            <li><a href="prijava.html">Prijava</a></li>
         </ul>
     </nav>
+
     <div class="main-banner">
         <p>Dobrodošli na DZ Blogs - Sledite najnovejšim trendom!</p>
     </div>
+
     <div class="container">
         <!-- Sekcija za najnovejše novice -->
         <section class="latest-news">
@@ -107,7 +38,7 @@
             <div class="news-item">
                 <img src="news1.jpg" alt="Novica 1">
                 <div>
-                    <h3>Naslov novice 1</h3>
+                    <h3><a href="#">Naslov novice 1</a></h3>
                     <p>Kratek opis novice 1...</p>
                     <a href="#">Preberi več</a>
                 </div>
@@ -115,7 +46,7 @@
             <div class="news-item">
                 <img src="news2.jpg" alt="Novica 2">
                 <div>
-                    <h3>Naslov novice 2</h3>
+                    <h3><a href="#">Naslov novice 2</a></h3>
                     <p>Kratek opis novice 2...</p>
                     <a href="#">Preberi več</a>
                 </div>
@@ -128,7 +59,7 @@
             <div class="topic-item">
                 <img src="topic1.jpg" alt="Tema 1">
                 <div>
-                    <h3>Naslov teme 1</h3>
+                    <h3><a href="#">Naslov teme 1</a></h3>
                     <p>Kratek opis teme 1...</p>
                     <a href="#">Raziskuj temo</a>
                 </div>
@@ -136,7 +67,7 @@
             <div class="topic-item">
                 <img src="topic2.jpg" alt="Tema 2">
                 <div>
-                    <h3>Naslov teme 2</h3>
+                    <h3><a href="#">Naslov teme 2</a></h3>
                     <p>Kratek opis teme 2...</p>
                     <a href="#">Raziskuj temo</a>
                 </div>
@@ -149,7 +80,7 @@
             <div class="category-item">
                 <img src="category1.jpg" alt="Kategorija 1">
                 <div>
-                    <h3>Poslovne novice</h3>
+                    <h3><a href="#">Poslovne novice</a></h3>
                     <p>Kratek opis kategorije...</p>
                     <a href="#">Odkrij več</a>
                 </div>
@@ -157,7 +88,7 @@
             <div class="category-item">
                 <img src="category2.jpg" alt="Kategorija 2">
                 <div>
-                    <h3>Zdravje in Wellness</h3>
+                    <h3><a href="#">Zdravje in Wellness</a></h3>
                     <p>Kratek opis kategorije...</p>
                     <a href="#">Odkrij več</a>
                 </div>
@@ -166,8 +97,11 @@
     </div>
     
     <footer class="footer">
-        <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
-        <p><a href="mailto:info.dayzzzz@gmail.com" style="color: white; text-decoration: underline;">Kontaktirajte nas</a></p>
+        <div class="container">
+            <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
+            <p><a href="mailto:info.dayzzzz@gmail.com" style="color: white; text-decoration: underline;">Kontaktirajte nas</a></p>
+            <p>Ostanite povezani: Sledite nam na <a href="https://github.com/DZ004/FlashSale" style="color: white;">GitHub</a>.</p>
+        </div>
     </footer>
 </body>
 </html>
