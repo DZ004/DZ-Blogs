@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[TITULKA BLOG POSTA] - DZ Blogs</title>
+    <title>Odkrijte Prekmurje: Srce Slovenije, Polno Tradicije in Naravnih Lepot - DZ Blogs</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <meta name="description" content="[Kratek opis bloga, ki vključuje ključne besede za SEO]">
+    <meta name="description" content="Raziskujemo Prekmurje, regijo polno kulturne dediščine, naravnih lepot in pristnih dogodkov.">
     <style>
-        /* Add any additional styles here if needed */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -54,6 +53,7 @@
         }
         .blog-post h2 {
             color: #0056b3;
+            margin-top: 0;
         }
         .author {
             font-size: 0.9em;
@@ -81,6 +81,10 @@
             bottom: 0;
             width: 100%;
         }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -99,39 +103,43 @@
 
     <main class="blog-post">
         <article>
-            <h2>[TITULKA BLOG POSTA]</h2> <!-- Replace with the title of your blog post -->
-            <p class="author">Avtor: [VAŠ IME] | Datum: [DATUM]</p> <!-- Replace with your name and the date -->
-            <img src="[POT_DO_SLIKE]" alt="[ALTERNATIVNO IME ZA SLIKO]" class="featured-image"> <!-- Replace with the path to your featured image and alt text -->
-            <p>[UVODNI PARAGRAF, KI PRIKAZUJE TEMO IN POMEN BLOG POSTA]</p> <!-- Introduction paragraph -->
+            <h2>Odkrijte Prekmurje: Srce Slovenije, Polno Tradicije in Naravnih Lepot</h2> 
+            <p class="author">Avtor: Tibi Topolinjak Munda | Datum: 3. november 2024</p>
+            <img src="pot_do_slike.jpg" alt="Naravne lepote Prekmurja" class="featured-image"> <!-- Replace with the path to your featured image -->
+            <p>Prekmurje, regija na severovzhodu Slovenije, je pravi dragulj, ki ponuja bogato kulturno dediščino, čudovito naravo in prijazne domačine. Čeprav pogosto ostaja v senci bolj znanih slovenskih destinacij, je Prekmurje polno skritih biserov, ki čakajo, da jih odkrijemo. V tem blogu bomo raziskali nekaj pristnih novic in zanimivosti iz Prekmurja, ki vas bodo navdušile in spodbudile, da to čarobno regijo obiščete.</p>
 
-            <h3>[NASLOV PODTEME]</h3> <!-- Subheading for the first section -->
-            <p>[PRVI PARAGRAF PODTEME]</p> <!-- Content for the first section -->
+            <h3>Nova turistična kolesarska pot "Prekmurska krožna pot"</h3>
+            <p>Prekmurje je znano po svojih slikovitih pokrajinah, ki jih je mogoče raziskovati s kolesom. Nova "Prekmurska krožna pot" obsega več kot 100 kilometrov in povezuje številne naravne in kulturne znamenitosti. Pot vodi skozi idilična polja, vinograde in ob reki Muri, ter obiskovalcem omogoča, da doživijo edinstveno lokalno kulturo. Na poti se nahajajo tudi postojanke, kjer lahko degustirate domače prekmurske jedi in vina.</p>
 
-            <h3>[NASLOV PODTEME]</h3> <!-- Subheading for the next section -->
-            <p>[DRUGI PARAGRAF PODTEME]</p> <!-- Content for the next section -->
-            <ul>
-                <li><strong>[KLJUČNI VIDIK 1]:</strong> [OPIS VIDIKA 1]</li> <!-- List key points or benefits with descriptions -->
-                <li><strong>[KLJUČNI VIDIK 2]:</strong> [OPIS VIDIKA 2]</li>
-                <li><strong>[KLJUČNI VIDIK 3]:</strong> [OPIS VIDIKA 3]</li>
-            </ul>
+            <h3>Ohranjanje prekmurske dediščine: Festival "Prekmurska jesen"</h3>
+            <p>Vsako leto v septembru poteka festival "Prekmurska jesen", ki slavi bogato kulturno dediščino regije. Festival ponuja raznolike delavnice, kjer lahko obiskovalci spoznajo tradicionalne obrti, kot so tkanje, lončarstvo in prepletanje košar. Kulinarika igra ključno vlogo na festivalu, saj lokalni ponudniki predstavljajo tipične prekmurske jedi, kot so bograč, prekmurska gibanica in domača vina. Festival je odlična priložnost, da se povežete z domačini in spoznate njihovo kulturo.</p>
 
-            <h3>[ZAKLJUČEK]</h3> <!-- Final thoughts or conclusions -->
-            <p>[KONČNI PARAGRAF, KI POVZEMA TEMO IN SPODBUJA BRALCE K DEJANJU]</p>
+            <h3>Ekoturizem in trajnostni razvoj v Prekmurju</h3>
+            <p>V Prekmurju se povečuje zavedanje o pomenu ekoturizma in trajnostnega razvoja. Številni lokalni ponudniki se osredotočajo na trajnostne prakse, ki vključujejo ekološko pridelavo hrane, zaščito naravnih virov in ohranjanje kulturne dediščine. To je vidno v številnih kmetijah, ki ponujajo obiskovalcem možnost, da sodelujejo pri kmetijskih delih, uživajo v lokalno pridelanih jedeh ter se naučijo o trajnostnem kmetijstvu.</p>
+
+            <h3>Naravni parki in zaščitena območja</h3>
+            <p>Prekmurje se ponaša z bogato naravno dediščino, ki vključuje zaščitena območja, kot so Krajinski park Goričko in Naravni park Šobec. Ti parki ponujajo številne možnosti za pohodništvo, opazovanje ptic in raziskovanje edinstvenih ekosistemov. V parku Goričko se nahajajo tudi številne kulturne znamenitosti, vključno z gradovi in cerkvami, ki pričajo o bogati zgodovini tega območja.</p>
+
+            <h3>Skrb za zdravje: Prekmurski wellness centri</h3>
+            <p>Zdravje in dobro počutje sta v Prekmurju na prvem mestu. Številni wellness centri ponujajo sprostitvene tretmaje, ki temeljijo na naravnih virih regije. Terme Lendava, znane po svojih termalnih vodah, nudijo različne wellness programe, ki vključujejo masaže, savne in druge sprostitvene tretmaje. Obisk teh centrov je odlična priložnost za obnovitev telesne in duševne energije.</p>
+
+            <h3>Zaključek</h3>
+            <p>Prekmurje je regija, ki ponuja obilo priložnosti za raziskovanje in odkrivanje. Z bogato kulturo, naravnimi lepotami in prijaznimi domačini je to pravo mesto za pobeg od vsakdanjega življenja. Ne glede na to, ali se odločite raziskovati kolesarske poti, obiskati kulturne festivale ali uživati v wellnessu, Prekmurje vas bo zagotovo očaralo. Zato ne odlašajte – obiščite Prekmurje in odkrijte vse njegove čare!</p>
         </article>
 
         <aside class="related-posts">
-            <h3>Povezani Blogi</h3> <!-- Section for related posts -->
+            <h3>Povezani Blogi</h3> 
             <ul>
-                <li><a href="[POT_DO_POVEZANE_OBJAVE_1]">[NASLOV POVEZANE_OBJAVE_1]</a></li> <!-- Links to related posts -->
-                <li><a href="[POT_DO_POVEZANE_OBJAVE_2]">[NASLOV POVEZANE_OBJAVE_2]</a></li>
-                <li><a href="[POT_DO_POVEZANE_OBJAVE_3]">[NASLOV POVEZANE_OBJAVE_3]</a></li>
+                <li><a href="novice-o-turizmu.html">Novosti v turizmu v Sloveniji</a></li>
+                <li><a href="trajnostni-projekti.html">Trajnostni projekti po Sloveniji</a></li>
+                <li><a href="izletniške-lokacije.html">Najlepše izletniške lokacije v Sloveniji</a></li>
             </ul>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
-        <p>Ostanite povezani: Sledite nam na <a href="https://github.com/DZ004/FlashSale">GitHub</a>.</p> <!-- GitHub link -->
+        <p>&copy; 2024 Tibi Topolinjak Munda. Vse pravice pridržane.</p>
+        <p><a href="kontakt.html">Kontakt</a> | <a href="politika-zasebnosti.html">Politika zasebnosti</a></p>
     </footer>
 </body>
 </html>
