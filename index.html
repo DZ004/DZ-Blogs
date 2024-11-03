@@ -102,7 +102,6 @@
                 align-items: center;
             }
         }
-        /* New styles for newsletter subscription form */
         .newsletter {
             background: #e7f3fe;
             padding: 20px;
@@ -129,7 +128,6 @@
         .newsletter button:hover {
             background: #003d7a;
         }
-        /* Styles for the search bar */
         .search {
             margin-top: 20px;
             text-align: center;
@@ -152,7 +150,6 @@
         .search button:hover {
             background: #003d7a;
         }
-        /* Styles for the trending topics section */
         .trending-topics {
             background: #f9f9f9;
             padding: 15px;
@@ -168,9 +165,6 @@
             background: #fff;
             border-radius: 5px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        .faq h2 {
-            margin-bottom: 10px;
         }
         .faq-item {
             margin-bottom: 10px;
@@ -267,41 +261,45 @@
         <!-- Trending Topics Section -->
         <section class="trending-topics">
             <h2>Trendovske Teme</h2>
-            <p><strong>Tema 1:</strong> Kratek opis teme 1.</p>
-            <p><strong>Tema 2:</strong> Kratek opis teme 2.</p>
-            <p><strong>Tema 3:</strong> Kratek opis teme 3.</p>
+            <p><strong>Tema 1:</strong> Kratek opis teme 1...</p>
+            <p><strong>Tema 2:</strong> Kratek opis teme 2...</p>
         </section>
-
-        <!-- Newsletter Subscription -->
-        <div class="newsletter">
-            <h2>Prijavite se na našo novičko!</h2>
-            <input type="email" placeholder="Vaš e-poštni naslov">
-            <button type="submit">Prijavi se</button>
-        </div>
 
         <!-- FAQ Section -->
         <section class="faq">
             <h2>Pogosta Vprašanja</h2>
             <div class="faq-item">
-                <h3 onclick="toggleFAQ(this)">Vprašanje 1: Kako lahko prispevam blog?</h3>
-                <p>Odgovor: Če želite prispevati blog, nas kontaktirajte preko kontaktnega obrazca.</p>
+                <h3 onclick="toggleFAQ(this)">Vprašanje 1: Kratek opis vprašanja 1?</h3>
+                <p>Odgovor na vprašanje 1: ...</p>
             </div>
             <div class="faq-item">
-                <h3 onclick="toggleFAQ(this)">Vprašanje 2: Kako se prijavim na novičke?</h3>
-                <p>Odgovor: Prijavite se lahko v razdelku 'Prijava na novičke'.</p>
+                <h3 onclick="toggleFAQ(this)">Vprašanje 2: Kratek opis vprašanja 2?</h3>
+                <p>Odgovor na vprašanje 2: ...</p>
             </div>
         </section>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <h2>Prijavite se na našo e-pošto!</h2>
+            <input type="email" placeholder="Vaš e-poštni naslov" required>
+            <button type="submit">Prijavi se</button>
+        </div>
     </div>
 
     <footer class="footer">
-        <p>© 2024 DZ Blogs | Vse pravice pridržane | <a href="kontakt.html" style="color:white;">Kontaktirajte nas</a></p>
+        <p>© 2024 DZ Blogs. Vse pravice pridržane.</p>
+        <p>Kontakt: <a href="mailto:info@dayzzzz@gmail.com" style="color: white;">info@dayzzzz@gmail.com</a></p>
+        <p><a href="#">Odjava iz e-novice</a></p>
     </footer>
 
     <script>
         function toggleFAQ(element) {
             const answer = element.nextElementSibling;
-            answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
+            answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
         }
+
+        // Initialize all FAQ answers to be hidden
+        document.querySelectorAll('.faq-item p').forEach(p => p.style.display = 'none');
     </script>
 </body>
 </html>
