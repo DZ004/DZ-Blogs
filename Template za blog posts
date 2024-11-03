@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TITULKA BLOG POSTA] - DZ Blogs</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <meta name="description" content="[Kratek opis bloga, ki vključuje ključne besede za SEO]">
+    <style>
+        /* Add any additional styles here if needed */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background: #0056b3;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #003d7a;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #0056b3;
+        }
+        .author {
+            font-size: 0.9em;
+            color: #666;
+            margin: 10px 0;
+        }
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .related-posts {
+            margin-top: 30px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">DZ Blogs</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="novice.html">Novice</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="izdelki.html">Izdelki</a></li>
+                <li><a href="ustvari_profil.html">Ustvari Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-post">
+        <article>
+            <h2>[TITULKA BLOG POSTA]</h2> <!-- Replace with the title of your blog post -->
+            <p class="author">Avtor: [VAŠ IME] | Datum: [DATUM]</p> <!-- Replace with your name and the date -->
+            <img src="[POT_DO_SLIKE]" alt="[ALTERNATIVNO IME ZA SLIKO]" class="featured-image"> <!-- Replace with the path to your featured image and alt text -->
+            <p>[UVODNI PARAGRAF, KI PRIKAZUJE TEMO IN POMEN BLOG POSTA]</p> <!-- Introduction paragraph -->
+
+            <h3>[NASLOV PODTEME]</h3> <!-- Subheading for the first section -->
+            <p>[PRVI PARAGRAF PODTEME]</p> <!-- Content for the first section -->
+
+            <h3>[NASLOV PODTEME]</h3> <!-- Subheading for the next section -->
+            <p>[DRUGI PARAGRAF PODTEME]</p> <!-- Content for the next section -->
+            <ul>
+                <li><strong>[KLJUČNI VIDIK 1]:</strong> [OPIS VIDIKA 1]</li> <!-- List key points or benefits with descriptions -->
+                <li><strong>[KLJUČNI VIDIK 2]:</strong> [OPIS VIDIKA 2]</li>
+                <li><strong>[KLJUČNI VIDIK 3]:</strong> [OPIS VIDIKA 3]</li>
+            </ul>
+
+            <h3>[ZAKLJUČEK]</h3> <!-- Final thoughts or conclusions -->
+            <p>[KONČNI PARAGRAF, KI POVZEMA TEMO IN SPODBUJA BRALCE K DEJANJU]</p>
+        </article>
+
+        <aside class="related-posts">
+            <h3>Povezani Blogi</h3> <!-- Section for related posts -->
+            <ul>
+                <li><a href="[POT_DO_POVEZANE_OBJAVE_1]">[NASLOV POVEZANE_OBJAVE_1]</a></li> <!-- Links to related posts -->
+                <li><a href="[POT_DO_POVEZANE_OBJAVE_2]">[NASLOV POVEZANE_OBJAVE_2]</a></li>
+                <li><a href="[POT_DO_POVEZANE_OBJAVE_3]">[NASLOV POVEZANE_OBJAVE_3]</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
+        <p>Ostanite povezani: Sledite nam na <a href="https://github.com/DZ004/FlashSale">GitHub</a>.</p> <!-- GitHub link -->
+    </footer>
+</body>
+</html>
