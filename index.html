@@ -119,6 +119,33 @@
                 align-items: center;
             }
         }
+        /* New styles for newsletter subscription form */
+        .newsletter {
+            background: #e7f3fe;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background: #003d7a;
+        }
     </style>
 </head>
 <body>
@@ -226,28 +253,26 @@
             <div class="item category-item">
                 <img src="category2.jpg" alt="Kategorija 2: Kratek opis kategorije 2">
                 <div>
-                    <h3>Zdravje in Wellness</h3>
+                    <h3>Kultura</h3>
                     <p>Kratek opis kategorije...</p>
                     <a href="novice.html">Odkrij več</a>
                 </div>
             </div>
         </section>
-        
-        <!-- Sekcija za uporabniške komentarje -->
-        <section class="user-comments">
-            <h2>Kaj pravijo naši bralci</h2>
-            <div class="item comment-item">
-                <p><strong>Janez:</strong> Super blog, vedno najdem zanimive informacije!</p>
-            </div>
-            <div class="item comment-item">
-                <p><strong>Marija:</strong> Rad/a berem vaše novice, vedno so sveže in zanimive!</p>
-            </div>
-        </section>
+
+        <!-- Novice o naročilu -->
+        <div class="newsletter">
+            <h2>Prijavite se na naše novice!</h2>
+            <form action="#">
+                <input type="email" placeholder="Vnesite svoj e-poštni naslov" required>
+                <button type="submit">Prijavi se</button>
+            </form>
+        </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
-        <p>Kontakt: <a href="mailto:info@dayzzzz@gmail.com">info@dayzzzz@gmail.com</a></p>
+        <p>&copy; 2024 DZ Blogs | Vse pravice pridržane | <a href="politika-zasebnosti.html" style="color: white;">Politika zasebnosti</a></p>
+        <p>Kontakt: <a href="mailto:info@dayzzzz@gmail.com" style="color: white;">info@dayzzzz@gmail.com</a></p>
     </footer>
 </body>
 </html>
