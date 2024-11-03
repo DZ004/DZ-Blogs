@@ -46,23 +46,6 @@
         nav ul li a:hover {
             background: #003d7a;
         }
-        nav ul .dropdown {
-            display: none;
-            position: absolute;
-            background: #004494;
-            padding: 10px 0;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        nav ul li:hover .dropdown {
-            display: block;
-        }
-        nav ul .dropdown li {
-            width: 200px;
-        }
-        nav ul .dropdown li a {
-            padding: 10px 15px;
-        }
         .main-banner {
             background: url('banner.jpg') no-repeat center center;
             background-size: cover;
@@ -146,6 +129,63 @@
         .newsletter button:hover {
             background: #003d7a;
         }
+        /* Styles for the search bar */
+        .search {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .search input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search button {
+            padding: 10px 20px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search button:hover {
+            background: #003d7a;
+        }
+        /* Styles for the trending topics section */
+        .trending-topics {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .trending-topics h2 {
+            margin: 0;
+        }
+        .faq {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .faq h2 {
+            margin-bottom: 10px;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .faq-item h3 {
+            margin: 0;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -176,6 +216,12 @@
     </div>
     
     <div class="container">
+        <!-- Search bar -->
+        <div class="search">
+            <input type="text" placeholder="Išči po blogih...">
+            <button type="submit">Išči</button>
+        </div>
+
         <!-- Sekcija za najnovejše novice -->
         <section class="latest-news">
             <h2>Najnovejše Novice</h2>
@@ -218,61 +264,44 @@
             </div>
         </section>
 
-        <!-- Sekcija za popularne teme -->
-        <section class="popular-topics">
-            <h2>Popularne Teme</h2>
-            <div class="item topic-item">
-                <img src="topic1.jpg" alt="Tema 1: Kratek opis teme 1">
-                <div>
-                    <h3>Naslov teme 1</h3>
-                    <p>Kratek opis teme 1...</p>
-                    <a href="novice.html">Raziskuj temo</a>
-                </div>
-            </div>
-            <div class="item topic-item">
-                <img src="topic2.jpg" alt="Tema 2: Kratek opis teme 2">
-                <div>
-                    <h3>Naslov teme 2</h3>
-                    <p>Kratek opis teme 2...</p>
-                    <a href="novice.html">Raziskuj temo</a>
-                </div>
-            </div>
+        <!-- Trending Topics Section -->
+        <section class="trending-topics">
+            <h2>Trendovske Teme</h2>
+            <p><strong>Tema 1:</strong> Kratek opis teme 1.</p>
+            <p><strong>Tema 2:</strong> Kratek opis teme 2.</p>
+            <p><strong>Tema 3:</strong> Kratek opis teme 3.</p>
         </section>
 
-        <!-- Kategorije blogov -->
-        <section class="categories">
-            <h2>Kategorije</h2>
-            <div class="item category-item">
-                <img src="category1.jpg" alt="Kategorija 1: Kratek opis kategorije 1">
-                <div>
-                    <h3>Poslovne novice</h3>
-                    <p>Kratek opis kategorije...</p>
-                    <a href="novice.html">Odkrij več</a>
-                </div>
-            </div>
-            <div class="item category-item">
-                <img src="category2.jpg" alt="Kategorija 2: Kratek opis kategorije 2">
-                <div>
-                    <h3>Kultura</h3>
-                    <p>Kratek opis kategorije...</p>
-                    <a href="novice.html">Odkrij več</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Novice o naročilu -->
+        <!-- Newsletter Subscription -->
         <div class="newsletter">
-            <h2>Prijavite se na naše novice!</h2>
-            <form action="#">
-                <input type="email" placeholder="Vnesite svoj e-poštni naslov" required>
-                <button type="submit">Prijavi se</button>
-            </form>
+            <h2>Prijavite se na našo novičko!</h2>
+            <input type="email" placeholder="Vaš e-poštni naslov">
+            <button type="submit">Prijavi se</button>
         </div>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Pogosta Vprašanja</h2>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">Vprašanje 1: Kako lahko prispevam blog?</h3>
+                <p>Odgovor: Če želite prispevati blog, nas kontaktirajte preko kontaktnega obrazca.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">Vprašanje 2: Kako se prijavim na novičke?</h3>
+                <p>Odgovor: Prijavite se lahko v razdelku 'Prijava na novičke'.</p>
+            </div>
+        </section>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 DZ Blogs | Vse pravice pridržane | <a href="politika-zasebnosti.html" style="color: white;">Politika zasebnosti</a></p>
-        <p>Kontakt: <a href="mailto:info@dayzzzz@gmail.com" style="color: white;">info@dayzzzz@gmail.com</a></p>
+        <p>© 2024 DZ Blogs | Vse pravice pridržane | <a href="kontakt.html" style="color:white;">Kontaktirajte nas</a></p>
     </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
+        }
+    </script>
 </body>
 </html>
