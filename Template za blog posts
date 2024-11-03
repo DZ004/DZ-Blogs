@@ -141,11 +141,17 @@
 
 
 
+# z tem dodaš v novice.html############
 
+<section class="news-article">
+            <h2><a href="trajnostni-turizem.html">Vpliv trajnostnega turizma na lokalne skupnosti</a></h2>
+            <p>
+                Kratek povzetek tvojega novega bloga, ki pritegne bralce in jih spodbuja, da kliknejo na povezavo.
+            </p>
+            <p><a href="trajnostni-turizem.html">Preberi več...</a></p>
+        </section>
 
-
-
-
+######
 
 
 
