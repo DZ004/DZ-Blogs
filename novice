@@ -25,19 +25,11 @@
 
     <main class="news-section">
         <section class="news-article">
-            <h2>Referendum o širitvi jedrske elektrarne Krško: Ključna odločitev za energetsko prihodnost Slovenije</h2>
+            <h2><a href="krsko-referendum.html">Referendum o širitvi jedrske elektrarne Krško: Ključna odločitev za energetsko prihodnost Slovenije</a></h2>
             <p>
-                Slovenci bodo 24. novembra 2024 odločali o širitvi jedrske elektrarne Krško, projektu, ki bi pomembno vplival na stabilnost oskrbe z elektriko in prehod k nizkoogljičnim virom energije. Vlada podpira projekt Krško 2, katerega stroški so ocenjeni na med 9,3 in 15,4 milijarde evrov, saj meni, da bo tako zagotovljena dolgoročna energetska varnost države.
+                Slovenci bodo 24. novembra 2024 odločali o širitvi jedrske elektrarne Krško, projektu, ki bi pomembno vplival na stabilnost oskrbe z elektriko in prehod k nizkoogljičnim virom energije.
             </p>
-            <p>
-                Projekt, ki ga vodi državno podjetje Gen Energija, je prejel podporo tako vlade kot opozicije, a hkrati sproža kritike okoljskih organizacij. Te trdijo, da volivci nimajo dovolj informacij za informirano odločitev. Vprašanje referenduma je svetovalne narave in bo vladi omogočilo nadaljnje priprave, če bo rezultat pozitiven.
-            </p>
-            <p>
-                <strong>Razprava:</strong> Referendum je pritegnil pozornost ne le v Sloveniji, ampak tudi v mednarodnih okoljskih in energetskih krogih. Jedrska energija ostaja razdeljujoča tema, ki odpira vprašanja o trajnosti, varnosti in dolgoročni ekonomski upravičenosti.
-            </p>
-            <p>
-                <strong>Vir:</strong> <a href="https://www.rtvslo.si">RTV Slovenija</a>, <a href="https://www.neimagazine.com">Nuclear Engineering International</a>
-            </p>
+            <p><a href="krsko-referendum.html">Preberi več...</a></p>
         </section>
         
         <aside class="related-articles">
