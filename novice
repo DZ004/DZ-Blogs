@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualne Novice - DZ Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Spremljajte najnovejše in najpomembnejše novice v Sloveniji na DZ Blogs. Pridružite se nam in bodite obveščeni o aktualnih dogodkih.">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">DZ Blogs</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="novice.html" class="active">Novice</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="izdelki.html">Izdelki</a></li>
+                    <li><a href="ustvari_profil.html">Ustvari Profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="news-section">
+        <section class="news-article">
+            <h2>Referendum o širitvi jedrske elektrarne Krško: Ključna odločitev za energetsko prihodnost Slovenije</h2>
+            <p>
+                Slovenci bodo 24. novembra 2024 odločali o širitvi jedrske elektrarne Krško, projektu, ki bi pomembno vplival na stabilnost oskrbe z elektriko in prehod k nizkoogljičnim virom energije. Vlada podpira projekt Krško 2, katerega stroški so ocenjeni na med 9,3 in 15,4 milijarde evrov, saj meni, da bo tako zagotovljena dolgoročna energetska varnost države.
+            </p>
+            <p>
+                Projekt, ki ga vodi državno podjetje Gen Energija, je prejel podporo tako vlade kot opozicije, a hkrati sproža kritike okoljskih organizacij. Te trdijo, da volivci nimajo dovolj informacij za informirano odločitev. Vprašanje referenduma je svetovalne narave in bo vladi omogočilo nadaljnje priprave, če bo rezultat pozitiven.
+            </p>
+            <p>
+                <strong>Razprava:</strong> Referendum je pritegnil pozornost ne le v Sloveniji, ampak tudi v mednarodnih okoljskih in energetskih krogih. Jedrska energija ostaja razdeljujoča tema, ki odpira vprašanja o trajnosti, varnosti in dolgoročni ekonomski upravičenosti.
+            </p>
+            <p>
+                <strong>Vir:</strong> <a href="https://www.rtvslo.si">RTV Slovenija</a>, <a href="https://www.neimagazine.com">Nuclear Engineering International</a>
+            </p>
+        </section>
+        
+        <aside class="related-articles">
+            <h3>Povezane Novice</h3>
+            <ul>
+                <li><a href="https://www.rtvslo.si/slovenija">Aktualne Novice iz Slovenije</a></li>
+                <li><a href="izdelki.html">Novosti v ponudbi na DZ Trg</a></li>
+                <li><a href="kontakt.html">Kontaktirajte nas</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
+            <p>Ostanite povezani: Sledite nam na <a href="https://github.com/DZ004/FlashSale">GitHub</a> in spremljajte naše projekte.</p>
+        </div>
+    </footer>
+</body>
+</html>
