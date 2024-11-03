@@ -65,12 +65,32 @@
             background: #0056b3;
             color: #ffffff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             margin-top: 20px;
         }
         footer a {
             color: #ffffff;
             text-decoration: underline;
+        }
+        .newsletter {
+            margin: 20px 0;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+        .newsletter input[type="submit"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #004494;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .newsletter input[type="submit"]:hover {
+            background: #003d7a;
         }
     </style>
 </head>
@@ -127,7 +147,15 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
+            <p>&copy; 2024 Dayzzzz, Tibi Topolinjak Munda, DZ Blogs. Vse pravice pridržane.</p>
+            <p>Kontaktirajte nas: <a href="mailto:info.dayzzzz@gmail.com">info.dayzzzz@gmail.com</a></p>
+            <div class="newsletter">
+                <h3>Naročite se na naše novice</h3>
+                <form action="[YOUR_FORM_ACTION]" method="POST">
+                    <input type="email" name="email" placeholder="Vaš e-naslov" required>
+                    <input type="submit" value="Naroči se">
+                </form>
+            </div>
             <p>Ostanite povezani: Sledite nam na <a href="https://github.com/DZ004/FlashSale">GitHub</a> in spremljajte naše projekte.</p>
         </div>
     </footer>
