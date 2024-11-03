@@ -14,127 +14,56 @@
             line-height: 1.6;
         }
         header {
-    background: #0056b3;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-.logo {
-    margin-bottom: 15px;
-}
-
-nav {
-    background: #004494;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #003d7a;
-}
-
-nav ul .dropdown {
-    display: none;
-    position: absolute;
-    background: #004494;
-    padding: 10px 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-nav ul .dropdown li {
-    width: 200px; /* Set a width for dropdown items */
-}
-
-nav ul .dropdown li a {
-    padding: 10px 15px;
-}
-        header {
-    background: #0056b3;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-.logo {
-    margin-bottom: 15px;
-}
-
-nav {
-    background: #004494;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #003d7a;
-}
-
-nav ul .dropdown {
-    display: none;
-    position: absolute;
-    background: #004494;
-    padding: 10px 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-nav ul .dropdown li {
-    width: 200px; /* Set a width for dropdown items */
-}
-
-nav ul .dropdown li a {
-    padding: 10px 15px;
-}
+            background: #0056b3;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .logo {
+            margin-bottom: 15px;
+        }
+        nav {
+            background: #004494;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #003d7a;
+        }
+        nav ul .dropdown {
+            display: none;
+            position: absolute;
+            background: #004494;
+            padding: 10px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+        nav ul .dropdown li {
+            width: 200px; /* Set a width for dropdown items */
+        }
+        nav ul .dropdown li a {
+            padding: 10px 15px;
+        }
         .main-banner {
             background: url('banner.jpg') no-repeat center center;
             background-size: cover;
@@ -145,7 +74,7 @@ nav ul .dropdown li a {
             justify-content: center;
             font-size: 2em;
             font-weight: bold;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
         }
         .container {
             max-width: 1200px;
@@ -165,7 +94,7 @@ nav ul .dropdown li a {
             margin-bottom: 10px;
             padding: 15px;
             border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
         }
@@ -195,51 +124,37 @@ nav ul .dropdown li a {
 </head>
 <body>
    <header>
-    <div class="logo">
-        <h1>DZ Blogs</h1>
-        <p>Vaš vir za najnovejše novice in bloge o različnih temah</p>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Domov</a></li>
-            <li><a href="novice.html">Novice</a></li>
-            <li><a href="blogi.html">Blogi</a></li>
-            <li><a href="o-nas.html">O Nas</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="#">Več &#9662;</a>
-                <ul class="dropdown">
-                    <li><a href="politika-zasebnosti.html">Politika zasebnosti</a></li>
-                    <li><a href="pogosta-vprasanja.html">Pogosta vprašanja</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Domov</a></li>
-            <li><a href="novice.html">Novice</a></li>
-            <li><a href="blogi.html">Blogi</a>
-                <ul>
-                    <li><a href="kategorija1.html">Kategorija 1</a></li>
-                    <li><a href="kategorija2.html">Kategorija 2</a></li>
-                    <li><a href="kategorija3.html">Kategorija 3</a></li>
-                </ul>
-            </li>
-            <li><a href="o-nas.html">O Nas</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="prijava.html">Prijava</a></li>
-        </ul>
-    </nav>
+        <div class="logo">
+            <h1>DZ Blogs</h1>
+            <p>Vaš vir za najnovejše novice in bloge o različnih temah</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="novice.html">Novice</a></li>
+                <li><a href="blogi.html">Blogi</a></li>
+                <li><a href="o-nas.html">O Nas</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#">Več &#9662;</a>
+                    <ul class="dropdown">
+                        <li><a href="politika-zasebnosti.html">Politika zasebnosti</a></li>
+                        <li><a href="pogosta-vprasanja.html">Pogosta vprašanja</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="main-banner">
         <p>Dobrodošli na DZ Blogs - Sledite najnovejšim trendom!</p>
     </div>
+    
     <div class="container">
         <!-- Sekcija za najnovejše novice -->
         <section class="latest-news">
             <h2>Najnovejše Novice</h2>
             <div class="item news-item">
-                <img src="news1.jpg" alt="Novica 1">
+                <img src="news1.jpg" alt="Novica 1: Kratek opis novice 1">
                 <div>
                     <h3>Naslov novice 1</h3>
                     <p>Kratek opis novice 1...</p>
@@ -247,7 +162,7 @@ nav ul .dropdown li a {
                 </div>
             </div>
             <div class="item news-item">
-                <img src="news2.jpg" alt="Novica 2">
+                <img src="news2.jpg" alt="Novica 2: Kratek opis novice 2">
                 <div>
                     <h3>Naslov novice 2</h3>
                     <p>Kratek opis novice 2...</p>
@@ -260,7 +175,7 @@ nav ul .dropdown li a {
         <section class="most-read-blogs">
             <h2>Najbolj Berene Bloge</h2>
             <div class="item blog-item">
-                <img src="blog1.jpg" alt="Blog 1">
+                <img src="blog1.jpg" alt="Blog 1: Kratek opis bloga 1">
                 <div>
                     <h3>Naslov bloga 1</h3>
                     <p>Kratek opis bloga 1...</p>
@@ -268,7 +183,7 @@ nav ul .dropdown li a {
                 </div>
             </div>
             <div class="item blog-item">
-                <img src="blog2.jpg" alt="Blog 2">
+                <img src="blog2.jpg" alt="Blog 2: Kratek opis bloga 2">
                 <div>
                     <h3>Naslov bloga 2</h3>
                     <p>Kratek opis bloga 2...</p>
@@ -281,7 +196,7 @@ nav ul .dropdown li a {
         <section class="popular-topics">
             <h2>Popularne Teme</h2>
             <div class="item topic-item">
-                <img src="topic1.jpg" alt="Tema 1">
+                <img src="topic1.jpg" alt="Tema 1: Kratek opis teme 1">
                 <div>
                     <h3>Naslov teme 1</h3>
                     <p>Kratek opis teme 1...</p>
@@ -289,7 +204,7 @@ nav ul .dropdown li a {
                 </div>
             </div>
             <div class="item topic-item">
-                <img src="topic2.jpg" alt="Tema 2">
+                <img src="topic2.jpg" alt="Tema 2: Kratek opis teme 2">
                 <div>
                     <h3>Naslov teme 2</h3>
                     <p>Kratek opis teme 2...</p>
@@ -302,7 +217,7 @@ nav ul .dropdown li a {
         <section class="categories">
             <h2>Kategorije</h2>
             <div class="item category-item">
-                <img src="category1.jpg" alt="Kategorija 1">
+                <img src="category1.jpg" alt="Kategorija 1: Kratek opis kategorije 1">
                 <div>
                     <h3>Poslovne novice</h3>
                     <p>Kratek opis kategorije...</p>
@@ -310,7 +225,7 @@ nav ul .dropdown li a {
                 </div>
             </div>
             <div class="item category-item">
-                <img src="category2.jpg" alt="Kategorija 2">
+                <img src="category2.jpg" alt="Kategorija 2: Kratek opis kategorije 2">
                 <div>
                     <h3>Zdravje in Wellness</h3>
                     <p>Kratek opis kategorije...</p>
@@ -326,14 +241,14 @@ nav ul .dropdown li a {
                 <p><strong>Janez:</strong> Super blog, vedno najdem zanimive informacije!</p>
             </div>
             <div class="item comment-item">
-                <p><strong>Marija:</strong> Zelo koristni nasveti, hvala!</p>
+                <p><strong>Marija:</strong> Hvala za odličen članek, mi je zelo pomagal!</p>
             </div>
         </section>
     </div>
-    
+
     <footer class="footer">
         <p>&copy; 2024 DZ Blogs. Vse pravice pridržane.</p>
-        <p><a href="mailto:info.dayzzzz@gmail.com" style="color: white; text-decoration: underline;">Kontaktirajte nas</a></p>
+        <p>Kontaktirajte nas na: <a href="mailto:info.dayzzzz@gmail.com">info.dayzzzz@gmail.com</a></p>
     </footer>
 </body>
 </html>
