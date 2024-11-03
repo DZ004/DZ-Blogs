@@ -31,13 +31,31 @@
             justify-content: center;
             gap: 20px;
         }
+        nav ul li {
+            position: relative;
+        }
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 10px 15px;
+            transition: background 0.3s;
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            background: #003377;
+            border-radius: 5px;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #003377;
+            padding: 10px 0;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        nav ul li:hover ul {
+            display: block;
         }
         .main-banner {
             background: url('banner.jpg') no-repeat center center;
@@ -61,6 +79,8 @@
         }
         h2 {
             color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
         }
         .item {
             background: white;
@@ -104,9 +124,16 @@
         <ul>
             <li><a href="index.html">Domov</a></li>
             <li><a href="novice.html">Novice</a></li>
-            <li><a href="blogi.html">Blogi</a></li>
+            <li><a href="blogi.html">Blogi</a>
+                <ul>
+                    <li><a href="kategorija1.html">Kategorija 1</a></li>
+                    <li><a href="kategorija2.html">Kategorija 2</a></li>
+                    <li><a href="kategorija3.html">Kategorija 3</a></li>
+                </ul>
+            </li>
             <li><a href="o-nas.html">O Nas</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="prijava.html">Prijava</a></li>
         </ul>
     </nav>
     <div class="main-banner">
@@ -175,7 +202,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Kategorije blogov -->
         <section class="categories">
             <h2>Kategorije</h2>
@@ -194,6 +221,17 @@
                     <p>Kratek opis kategorije...</p>
                     <a href="novice.html">Odkrij več</a>
                 </div>
+            </div>
+        </section>
+        
+        <!-- Sekcija za uporabniške komentarje -->
+        <section class="user-comments">
+            <h2>Kaj pravijo naši bralci</h2>
+            <div class="item comment-item">
+                <p><strong>Janez:</strong> Super blog, vedno najdem zanimive informacije!</p>
+            </div>
+            <div class="item comment-item">
+                <p><strong>Marija:</strong> Zelo koristni nasveti, hvala!</p>
             </div>
         </section>
     </div>
