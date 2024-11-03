@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogosta Vprašanja - DZ Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background: #0056b3;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .faq-item h3 {
+            margin: 0;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .faq-item h3:hover {
+            color: #0056b3;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+        .footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pogosta Vprašanja</h1>
+        <p>Vsa vaša vprašanja na enem mestu</p>
+    </header>
+
+    <div class="container">
+        <h2>Pogosta Vprašanja</h2>
+        
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(this)">Kaj je DZ Blogs?</h3>
+            <div class="faq-answer">
+                <p>DZ Blogs je platforma, kjer najdete najnovejše novice in bloge o različnih temah, vključno s potovanji, zdravjem in življenjskim slogom.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(this)">Kako lahko dodam novico ali blog?</h3>
+            <div class="faq-answer">
+                <p>Za dodajanje novice ali bloga se lahko obrnete na nas preko kontaktnega obrazca na naši strani.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(this)">Kako se prijavim na novice?</h3>
+            <div class="faq-answer">
+                <p>Na naši domači strani se lahko prijavite na novice tako, da vnesete svoj e-poštni naslov v prijavno polje.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(this)">Kakšne teme pokrivate?</h3>
+            <div class="faq-answer">
+                <p>Pokrivamo širok spekter tem, vključno s potovanji, zdravjem, kulinariko, tehnologijo in življenjskim slogom.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(this)">Kdo piše vaše bloge?</h3>
+            <div class="faq-answer">
+                <p>Naši blogi so napisani s strani različnih avtorjev, ki so strokovnjaki na svojih področjih.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 DZ Blogs. Vse pravice pridržane. Kontakt: <a href="mailto:info@dayzzzz@gmail.com">info@dayzzzz@gmail.com</a></p>
+    </footer>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
